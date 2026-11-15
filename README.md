@@ -1,15 +1,29 @@
+<p align="left">
+  <a href="https://github.com/grxxnzzz/HWFStrike/actions/workflows/github-code-scanning/codeql"><img alt="CodeQL" src="https://github.com/grxxnzzz/HWFStrike/actions/workflows/github-code-scanning/codeql/badge.svg"></a>
+  <a href="https://github.com/grxxnzzz/HWFStrike/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/grxxnzzz/HWFStrike?style=flat-square&label=License"></a>
+  <a href="https://github.com/grxxnzzz/HWFStrike/releases"><img alt="Latest Release" src="https://img.shields.io/github/v/release/grxxnzzz/HWFStrike?style=flat-square&label=Release&logo=github"></a>
+  <br>
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white">
+  <img alt="Platform: Windows x64" src="https://img.shields.io/badge/Platform-Windows%20x64-0078D6?style=flat-square&logo=windows&logoColor=white">
+  <img alt="Visual Studio" src="https://img.shields.io/badge/Visual%20Studio-6C33AF?style=flat-square&logo=visual%20studio&logoColor=white">
+  <br>
+  <img alt="Game: Horizon Forbidden West" src="https://img.shields.io/badge/Game-Horizon%20Forbidden%20West-black?style=flat-square">
+  <img alt="Uses: Native Loader" src="https://img.shields.io/badge/Uses-Native%20Loader-important?style=flat-square">
+  <img alt="Hook: MinHook" src="https://img.shields.io/badge/Hook-MinHook-blueviolet?style=flat-square">
+</p>
+
+# *<!> AI disclosure*
+
+> *This project was created with assistance from an AI coding agent. The author reviewed the source,
+configuration, packaging, and in-game behaviour. No AI-generated art, audio, voice, or game assets
+are included. Nothing AI-generated besides the code itself.*
+
 # HWFStrike
 
 `Native` mod for Horizon Forbidden West Complete Edition on PC that gives the contextual `Silent
 Strike` (stealth kill action) its own button.
 
 > also its funny how AI misspelled HFW (horizon forbidden west) as HWF (horizon west forbidden) XD
-
-### *<!> AI disclosure*
-
-*This project was created with assistance from an AI coding agent. The author reviewed the source,
-configuration, packaging, and in-game behaviour. No AI-generated art, audio, voice, or game assets
-are included.*
 
 ## Features
 
