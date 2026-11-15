@@ -1,0 +1,9 @@
+build/
+*.log
+types.txt
+snapshots/
+tools/
+console
+*.user
+*.suo
+.vs/

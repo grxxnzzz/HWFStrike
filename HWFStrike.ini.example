@@ -1,0 +1,58 @@
+# HWFStrike - a separate button for Silent Strike (Horizon Forbidden West Complete Edition)
+# Edit, then restart the game. No reinstalling needed.
+#
+# Virtual-key codes: 0x42 = B, 0x56 = V, 0x46 = F, 0x47 = G, 0x70 = F1
+# Mouse buttons:     0x01 = left, 0x02 = right, 0x04 = middle, 0x05 = X1, 0x06 = X2
+# Full list: https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+
+[General]
+# Log every press the mod sees while the game window is focused.
+LogKeys = true
+
+[Key]
+# The button that performs the strike. B is unused by all 72 of your current bindings.
+Key = 0x42
+
+# probe  = log only, never sends input
+# direct = always sends a light attack (does not check for a strike prompt)
+# watch  = same as smart's detection, but logs a full state dump and sends nothing
+# types  = dump RTTI type names to types.txt
+# smart  = sends a light attack ONLY while the game is offering a Silent Strike
+Mode = smart
+
+[Strike]
+# What the mod looks for in the prompt the game puts on screen. The Silent Strike prompt reads
+#   "Бесшумная атака <icon name=Stealth_Kill>"
+# in your language, and the part inside the icon tag is not translated, so it works whatever
+# language the game is in. Comma separated alternatives are allowed; the localised wording works
+# too (e.g. "Stealth_Kill,Бесшумная").
+StrikeMarkers = Stealth_Kill
+
+# Hold the window open briefly after the prompt disappears, so a one-frame flicker (or a press a
+# few milliseconds early) still counts. Keep it small - it only covers flicker, not aiming error.
+WidenPrompt = true
+GraceMs = 120
+# Press this many milliseconds before the prompt appears and the mod waits for it instead of
+# turning the press into a light attack. 0 (the default) means a press either strikes now or is
+# ignored - nothing is ever held back or delayed.
+LeadMs = 100
+
+# How long the injected light-attack press is held, in milliseconds.
+HoldMs = 30
+
+[Types]
+# Write <dll dir>\types.txt listing every RTTI type name the game registers.
+DumpTypes = true
+
+# Names containing these substrings are also echoed to the log (comma separated).
+TypeFilter = Contextual,Silent,Stealth,Kill,Player
+
+[Debug]
+# Adds the read-only investigation hooks (victim query, per-action verdicts). Log noise only;
+# not needed for smart mode.
+DebugHooks = false
+
+[Hook]
+# Module offset of the MsgGetPotentialContextualActionsOnVictim handler on build 1.5.80.0.
+# The mod checks the bytes at this address before hooking; if they do not match it refuses to hook.
+HookOffset = 0xf0b3e0
